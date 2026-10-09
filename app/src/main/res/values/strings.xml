@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shrinker Pro</string>
+
+    <!-- Main screen -->
+    <string name="drop_title">Shrink images</string>
+    <string name="drop_subtitle">PNG, JPG, HEIC, WebP, AVIF, GIF and SVG</string>
+    <string name="drop_active">Drop to shrink</string>
+    <string name="action_choose_files">Choose files</string>
+    <string name="action_choose_folder">Choose folder</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_back">Back</string>
+    <string name="recent_header">Recent</string>
+    <plurals name="file_count">
+        <item quantity="one">%d file</item>
+        <item quantity="other">%d files</item>
+    </plurals>
+    <plurals name="byte_count">
+        <item quantity="one">%d byte</item>
+        <item quantity="other">%d bytes</item>
+    </plurals>
+    <!-- "6 files · 61.9 MB saved". First placeholder is the already-formatted file count. -->
+    <string name="recent_summary">%1$s · %2$s saved</string>
+    <string name="action_clear">Clear</string>
+    <string name="empty_results">Shrunk images appear here. Files you share to Shrinker Pro from other apps are shrunk too.</string>
+    <string name="shrinking_progress">Shrinking %1$d of %2$d…</string>
+    <string name="shrinking_preparing">Looking for images…</string>
+    <!-- A result's sizes, original → shrunk. In right-to-left languages the arrow should point left. -->
+    <string name="result_sizes">%1$s → %2$s</string>
+    <string name="result_saved_percent">−%d%%</string>
+    <string name="result_grew_percent">+%d%%</string>
+    <string name="result_kept_original">Already as small as it gets — original kept</string>
+    <string name="action_open">Open</string>
+    <string name="action_share">Share</string>
+    <string name="no_app_to_open">No app on this device can open this file.</string>
+
+    <!-- Session bar -->
+    <string name="session_label">This session</string>
+    <string name="session_app_default">App default</string>
+    <string name="session_max">Max %spx</string>
+    <string name="session_no_limit">No limit</string>
+    <string name="session_crop_px">Crop %1$s×%2$s</string>
+    <string name="session_crop_ratio">Crop %1$s:%2$s</string>
+    <string name="session_modified">Differs from the app defaults</string>
+    <string name="action_adjust">Adjust</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_done">Done</string>
+    <string name="session_settings_title">Session settings</string>
+    <string name="session_convert_all">Convert all to</string>
+    <string name="session_quality">Quality</string>
+    <string name="session_max_size">Max size</string>
+    <string name="session_crop_to">Crop to</string>
+    <string name="session_crop_width">Width</string>
+    <string name="session_crop_height">Height</string>
+    <string name="crop_mode_ratio">ratio</string>
+    <string name="crop_mode_px">px</string>
+    <string name="px_suffix">px</string>
+    <string name="quality_default_suffix">%s (default)</string>
+    <string name="session_png_warning">PNG is lossless, so photos converted to it usually get larger.</string>
+    <string name="session_max_superseded">A px crop sets the size, so Max size doesn’t apply.</string>
+    <string name="session_crop_ratio_help">Ratio crops the shape and keeps the resolution.</string>
+    <string name="session_crop_px_help">px crops the shape, then scales to exactly that size. Nothing is enlarged.</string>
+    <string name="session_crop_incomplete">Fill in both numbers, or clear the crop.</string>
+    <string name="session_footer">Applies to this session only. Defaults live in Settings.</string>
+
+    <!-- Errors -->
+    <string name="error_title">Couldn’t shrink everything</string>
+    <string name="error_crop_incomplete">The crop is missing a side, so it is not clear what these files should be cropped to. Fill in both numbers, or clear the crop, and add them again.</string>
+    <string name="error_unsupported">%1$s: only SVG, PNG, GIF, JPEG, WebP, AVIF, HEIC and HEIF are supported.</string>
+    <string name="error_read">%1$s: couldn’t be read.</string>
+    <string name="error_decode">%1$s: couldn’t be decoded. The file may be damaged, or this device can’t read its format.</string>
+    <string name="error_encode">%1$s: couldn’t be encoded as %2$s.</string>
+    <string name="error_write">%1$s: the result couldn’t be saved.</string>
+    <string name="error_svg">%1$s: SVG optimization failed (%2$s).</string>
+    <string name="error_folder_unavailable">The output folder is no longer available. Choose it again in Settings.</string>
+    <string name="error_no_images">No images were found in what you chose.</string>
+    <string name="error_generic">%1$s: %2$s</string>
+    <string name="action_ok">OK</string>
+
+    <!-- Overwrite dialog -->
+    <plurals name="overwrite_title_originals">
+        <item quantity="one">Replace the original?</item>
+        <item quantity="other">Replace %d originals?</item>
+    </plurals>
+    <plurals name="overwrite_title_originals_in">
+        <item quantity="one">Replace the original in “%2$s”?</item>
+        <item quantity="other">Replace %1$d originals in “%2$s”?</item>
+    </plurals>
+    <plurals name="overwrite_title_existing">
+        <item quantity="one">Replace an existing file?</item>
+        <item quantity="other">Replace %d files?</item>
+    </plurals>
+    <plurals name="overwrite_title_existing_in">
+        <item quantity="one">Replace a file in “%2$s”?</item>
+        <item quantity="other">Replace %1$d files in “%2$s”?</item>
+    </plurals>
+    <plurals name="overwrite_message_originals">
+        <item quantity="one">This original will be overwritten: %2$s</item>
+        <item quantity="other">%1$d originals will be overwritten: %2$s</item>
+    </plurals>
+    <plurals name="overwrite_message_existing">
+        <item quantity="one">This file is already there: %2$s</item>
+        <item quantity="other">%1$d files are already there: %2$s</item>
+    </plurals>
+    <plurals name="overwrite_unaffected">
+        <item quantity="one">The other file is unaffected.</item>
+        <item quantity="other">The other %d files are unaffected.</item>
+    </plurals>
+    <string name="filename_separator">",\u0020"</string>
+    <plurals name="filenames_and_more">
+        <item quantity="one">%1$s, …and %2$d more</item>
+        <item quantity="other">%1$s, …and %2$d more</item>
+    </plurals>
+    <string name="action_skip_this">Skip This</string>
+    <string name="action_skip_these">Skip These</string>
+    <string name="action_keep_both">Keep Both</string>
+    <string name="action_replace">Replace</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel">Finished batches</string>
+    <string name="notification_channel_description">A notification when a batch of images has been shrunk.</string>
+    <plurals name="notification_title">
+        <item quantity="one">Image shrunk</item>
+        <item quantity="other">%d images shrunk</item>
+    </plurals>
+    <string name="notification_body_saved">%s saved</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="section_output">Output</string>
+    <string name="settings_where">Save to</string>
+    <string name="where_pictures">Pictures/Shrinker Pro</string>
+    <string name="where_same">Same folder as original</string>
+    <string name="where_custom">Choose folder…</string>
+    <string name="where_custom_chosen">Folder: %s</string>
+    <string name="where_custom_change">Change folder</string>
+    <string name="where_same_footer">Works for files opened through “Choose folder”. Files chosen one by one or shared from another app can only be written over in place; otherwise their results go to Pictures/Shrinker Pro.</string>
+    <string name="settings_subfolder">Put them in a “minified” subfolder</string>
+    <string name="naming_files">Files</string>
+    <string name="naming_filenames">Filenames</string>
+    <string name="naming_keep_originals">Keep originals, save a .min copy</string>
+    <string name="naming_add_min">Add .min</string>
+    <string name="naming_replace_originals">Replace originals</string>
+    <string name="naming_leave_as_is">Leave as is</string>
+    <string name="naming_example_min" translatable="false">photo.min.png</string>
+    <string name="naming_example_plain" translatable="false">photo.png</string>
+    <string name="replace_warning">Originals will be overwritten. There is no undo.</string>
+    <string name="settings_warn_overwrite">Warn before replacing a file</string>
+
+    <string name="section_conversion">Conversion</string>
+    <string name="format_png" translatable="false">PNG</string>
+    <string name="format_jpeg" translatable="false">JPEG</string>
+    <string name="format_heic">HEIC / HEIF</string>
+    <string name="format_webp" translatable="false">WebP</string>
+    <string name="format_avif" translatable="false">AVIF</string>
+    <string name="conversion_keep">Keep %s</string>
+    <string name="conversion_footer">SVG and GIF files are always optimised in their own format. SVG is vector, and GIF is usually animated — converting either would lose what makes it useful.</string>
+
+    <string name="section_quality">Quality</string>
+    <string name="settings_encode_at">Encode at</string>
+    <string name="quality_super_low">Super Low</string>
+    <string name="quality_low">Low</string>
+    <string name="quality_standard">Standard</string>
+    <string name="quality_high">High</string>
+    <string name="quality_footer">Applies to JPEG, WebP and AVIF. PNG and GIF are optimised by methods with no comparable setting, so they look the same whichever you choose. Every session starts here; the session bar can change it for one session without changing this.</string>
+
+    <string name="section_metadata">Metadata</string>
+    <string name="settings_keep_metadata">When shrinking, keep</string>
+    <string name="metadata_all">All metadata</string>
+    <string name="metadata_copyright">Copyright and credit only</string>
+    <string name="metadata_none">No metadata</string>
+    <string name="metadata_footer">Rotation is always applied to the image itself, so photos stay upright in any app whichever option you choose. “Copyright and credit only” drops location, capture time and camera details.</string>
+
+    <string name="section_general">General</string>
+    <string name="settings_notifications">Notify when a batch finishes</string>
+    <string name="notifications_blocked">Notifications are turned off for Shrinker Pro in system settings.</string>
+    <string name="action_open_settings">Open settings</string>
+    <string name="settings_clear_list">Clear result list when shrinking new images</string>
+
+    <string name="section_about">About</string>
+    <string name="about_version">Version %s</string>
+    <string name="about_credits">Compression never makes a file bigger: if a same-format result comes out larger, the original is kept. JPEG by mozjpeg, SVG optimisation by svgo, AVIF by libavif, JavaScript by QuickJS.</string>
+</resources>

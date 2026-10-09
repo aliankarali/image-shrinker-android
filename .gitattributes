@@ -1,0 +1,19 @@
+# Normalise line endings; scripts must stay LF and the Windows wrapper CRLF.
+* text=auto
+gradlew text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.gif binary
+*.webp binary
+*.avif binary
+*.heic binary
+*.ppm binary
+*.jar binary
+*.tar.gz binary
+
+# The bundled svgo build is generated (scripts/prepare-svgo.sh); keep it out of diffs and language stats.
+app/src/main/assets/svgo.js linguist-generated=true -diff

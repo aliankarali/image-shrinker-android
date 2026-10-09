@@ -1,0 +1,27 @@
+# Gradle
+.gradle/
+build/
+.kotlin/
+
+# Native (CMake / NDK)
+.cxx/
+
+# Machine-specific
+/local.properties
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# Build outputs and signing material
+*.apk
+*.aab
+*.ap_
+*.jks
+*.keystore
+/captures/
+
+# OS
+.DS_Store
+Thumbs.db
