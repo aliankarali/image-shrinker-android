@@ -179,5 +179,6 @@
 
     <string name="section_about">About</string>
     <string name="about_version">Version %s</string>
+    <string name="about_unofficial">Unofficial Android port of Shrinker Pro for macOS by Joshua Omilian. Not affiliated with or endorsed by the original author.</string>
     <string name="about_credits">Compression never makes a file bigger: if a same-format result comes out larger, the original is kept. JPEG by mozjpeg, SVG optimisation by svgo, AVIF by libavif, JavaScript by QuickJS.</string>
 </resources>

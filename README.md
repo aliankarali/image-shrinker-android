@@ -1,4 +1,10 @@
-# Shrinker Pro for Android
+# Shrinker Pro for Android (unofficial port)
+
+> **Unofficial.** This is an independent Android port of
+> [Shrinker Pro](https://github.com/jeso87/ShrinkerPro) for macOS by Joshua
+> Omilian, made under that project's MIT license. It is not affiliated with,
+> endorsed by, or supported by the original author. Please report issues
+> here, not to the macOS project.
 
 An Android port of [Shrinker Pro](https://github.com/jeso87/ShrinkerPro) for macOS: minify PNG, JPEG,
 HEIC, WebP, AVIF, GIF and SVG files on the device, with nothing uploaded

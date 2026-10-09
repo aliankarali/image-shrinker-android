@@ -11,8 +11,9 @@ static void throw_new(JNIEnv *env, const char *class_name, const char *message) 
 
 /* MozJpeg.nativeEncode(bitmap: Bitmap, quality: Int, icc: ByteArray?): ByteArray */
 JNIEXPORT jbyteArray JNICALL
-Java_app_shrinkerpro_engine_MozJpeg_nativeEncode(JNIEnv *env, jclass cls, jobject bitmap,
-                                                 jint quality, jbyteArray icc) {
+Java_io_github_aliankarali_imageshrinker_engine_MozJpeg_nativeEncode(JNIEnv *env, jclass cls,
+                                                                     jobject bitmap, jint quality,
+                                                                     jbyteArray icc) {
     (void) cls;
     AndroidBitmapInfo info;
     if (AndroidBitmap_getInfo(env, bitmap, &info) != ANDROID_BITMAP_RESULT_SUCCESS) {

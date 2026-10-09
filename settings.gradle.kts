@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ShrinkerPro"
+rootProject.name = "image-shrinker-android"
 include(":app")

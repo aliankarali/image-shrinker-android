@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "app.shrinkerpro"
+    namespace = "io.github.aliankarali.imageshrinker"
     compileSdk {
         version = release(37) { minorApiLevel = 2 }
     }
@@ -12,7 +12,7 @@ android {
     ndkVersion = "29.0.14206865"
 
     defaultConfig {
-        applicationId = "app.shrinkerpro"
+        applicationId = "io.github.aliankarali.imageshrinker"
         minSdk = 29
         targetSdk = 36
         versionCode = 1
